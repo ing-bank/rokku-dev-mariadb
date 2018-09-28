@@ -16,5 +16,5 @@ CREATE TABLE tokens(
 	CONSTRAINT `fk_tokens_username`
 		FOREIGN KEY (username) REFERENCES users (username)
 		ON DELETE CASCADE
-		ON UPDATE RESTRICT
+		ON UPDATE CASCADE
 ) COMMENT='Token DB for Gargoyle';
