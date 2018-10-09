@@ -1,3 +1,7 @@
-# Gargoyle Test - MariaDB
+[![Build Status](https://travis-ci.org/ing-bank/airlock-dev-mariadb.svg?branch=master)](https://travis-ci.org/ing-bank/airlock-dev-mariadb)
+[![](https://images.microbadger.com/badges/image/nielsdenissen/airlock-dev-mariadb:latest.svg)](https://microbadger.com/images/nielsdenissen/airlock-dev-mariadb:latest)
 
-This repo contains a MariaDB setup used for integration testing by the Gargoyle project.
+
+# Airlock Dev - Maria DB
+
+This repo contains a MariaDB setup used for integration testing by the [Airlock project](https://github.com/ing-bank/airlock).

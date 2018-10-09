@@ -1,12 +1,12 @@
-CREATE DATABASE gargoyle;
-USE gargoyle;
+CREATE DATABASE airlock;
+USE airlock;
 
 CREATE TABLE users(
     username VARCHAR(512) NOT NULL PRIMARY KEY,
     accesskey VARCHAR(512) NOT NULL UNIQUE,
     secretkey VARCHAR(512) NOT NULL,
     isNPA BOOLEAN NOT NULL
-) COMMENT='User DB for Gargoyle';
+) COMMENT='User DB for Airlock';
 
 CREATE TABLE tokens(
     sessiontoken VARCHAR(512) NOT NULL PRIMARY KEY,
@@ -17,4 +17,4 @@ CREATE TABLE tokens(
 		FOREIGN KEY (username) REFERENCES users (username)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
-) COMMENT='Token DB for Gargoyle';
+) COMMENT='Token DB for Airlock';
