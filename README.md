@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/ing-bank/airlock-dev-mariadb.svg?branch=master)](https://travis-ci.org/ing-bank/airlock-dev-mariadb)
-[![](https://images.microbadger.com/badges/image/nielsdenissen/airlock-dev-mariadb:latest.svg)](https://microbadger.com/images/nielsdenissen/airlock-dev-mariadb:latest)
+[![](https://images.microbadger.com/badges/image/wbaa/airlock-dev-mariadb:latest.svg)](https://microbadger.com/images/wbaa/airlock-dev-mariadb:latest)
 
 
 # Airlock Dev - Maria DB
