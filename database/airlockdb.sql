@@ -18,3 +18,13 @@ CREATE TABLE tokens(
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
 ) COMMENT='Token DB for Airlock';
+
+CREATE TABLE user_groups(
+    username VARCHAR(512) NOT NULL,
+    groupname VARCHAR(512) NOT NULL,
+	PRIMARY KEY (username, groupname),
+	CONSTRAINT `fk_user_username`
+		FOREIGN KEY (username) REFERENCES users (username)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+) COMMENT='User groups DB for Airlock';
