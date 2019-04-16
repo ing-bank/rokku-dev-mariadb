@@ -1,12 +1,12 @@
-CREATE DATABASE airlock;
-USE airlock;
+CREATE DATABASE rokku;
+USE rokku;
 
 CREATE TABLE users(
     username VARCHAR(512) NOT NULL PRIMARY KEY,
     accesskey VARCHAR(512) NOT NULL UNIQUE,
     secretkey VARCHAR(512) NOT NULL,
     isNPA BOOLEAN NOT NULL
-) COMMENT='User DB for Airlock';
+) COMMENT='User DB for Rokku';
 
 CREATE TABLE tokens(
     sessiontoken VARCHAR(512) NOT NULL PRIMARY KEY,
@@ -17,7 +17,7 @@ CREATE TABLE tokens(
 		FOREIGN KEY (username) REFERENCES users (username)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
-) COMMENT='Token DB for Airlock';
+) COMMENT='Token DB for Rokku';
 
 CREATE TABLE user_groups(
     username VARCHAR(512) NOT NULL,
@@ -27,4 +27,4 @@ CREATE TABLE user_groups(
 		FOREIGN KEY (username) REFERENCES users (username)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
-) COMMENT='User groups DB for Airlock';
+) COMMENT='User groups DB for Rokku';
