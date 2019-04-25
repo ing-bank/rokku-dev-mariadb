@@ -28,3 +28,11 @@ CREATE TABLE user_groups(
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
 ) COMMENT='User groups DB for Rokku';
+
+CREATE TABLE tokens_arch(
+    sessiontoken VARCHAR(512) NOT NULL PRIMARY KEY,
+    username VARCHAR(512) NOT NULL,
+    expirationtime DATETIME NOT NULL,
+    assumedgroup VARCHAR(512),
+	arch_date DATETIME NOT NULL
+) COMMENT='Archive token DB for Rokku';
