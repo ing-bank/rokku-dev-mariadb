@@ -5,7 +5,8 @@ CREATE TABLE users(
     username VARCHAR(512) NOT NULL PRIMARY KEY,
     accesskey VARCHAR(512) NOT NULL UNIQUE,
     secretkey VARCHAR(512) NOT NULL,
-    isNPA BOOLEAN NOT NULL
+    isNPA BOOLEAN NOT NULL,
+    isEnabled BOOLEAN NOT NULL
 ) COMMENT='User DB for Rokku';
 
 CREATE TABLE tokens(
