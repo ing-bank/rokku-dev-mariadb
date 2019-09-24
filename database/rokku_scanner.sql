@@ -4,7 +4,7 @@ USE rokku_scanner;
 
 CREATE TABLE scan_results(
     id bigint NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    s3object VARCHAR(512) NOT NULL,
+    object VARCHAR(512) NOT NULL,
     username VARCHAR(512) NOT NULL,
     result VARCHAR(20) NOT NULL,
     movedTo VARCHAR(512) NOT NULL,
