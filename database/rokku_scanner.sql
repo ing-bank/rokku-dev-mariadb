@@ -7,7 +7,7 @@ CREATE TABLE scan_results(
     object VARCHAR(512) NOT NULL,
     username VARCHAR(512) NOT NULL,
     result VARCHAR(20) NOT NULL,
-    movedTo VARCHAR(512) NOT NULL,
+    moved_to VARCHAR(512) NOT NULL,
     etag VARCHAR(50) NOT NULL, 
     timestamp VARCHAR(32) NOT NULL
 ) COMMENT='DB for RokkuScanner';
