@@ -9,5 +9,7 @@ CREATE TABLE scan_results(
     result VARCHAR(20) NOT NULL,
     moved_to VARCHAR(512) NOT NULL,
     etag VARCHAR(50) NOT NULL, 
+    step VARCHAR(15) NOT NULL, 
+    request_id VARCHAR(37) NOT NULL,
     timestamp VARCHAR(32) NOT NULL
 ) COMMENT='DB for RokkuScanner';
