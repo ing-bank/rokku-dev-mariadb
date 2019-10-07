@@ -13,7 +13,7 @@ CREATE TABLE tokens(
     sessiontoken VARCHAR(512) NOT NULL PRIMARY KEY,
     username VARCHAR(512) NOT NULL,
     expirationtime DATETIME NOT NULL,
-    assumedgroup VARCHAR(512),
+    assumerole VARCHAR(512),
 	CONSTRAINT `fk_tokens_username`
 		FOREIGN KEY (username) REFERENCES users (username)
 		ON DELETE CASCADE
@@ -34,6 +34,6 @@ CREATE TABLE tokens_arch(
     sessiontoken VARCHAR(512) NOT NULL PRIMARY KEY,
     username VARCHAR(512) NOT NULL,
     expirationtime DATETIME NOT NULL,
-    assumedgroup VARCHAR(512),
+    assumerole VARCHAR(512),
 	arch_date DATETIME NOT NULL
 ) COMMENT='Archive token DB for Rokku';
