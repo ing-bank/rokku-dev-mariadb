@@ -11,5 +11,6 @@ CREATE TABLE scan_results(
     etag VARCHAR(50) NOT NULL, 
     step VARCHAR(15) NOT NULL, 
     request_id VARCHAR(37) NOT NULL,
-    timestamp VARCHAR(32) NOT NULL
+    timestamp TIMESTAMP NOT NULL,
+    content_length BIGINT NOT NULL default 0
 ) COMMENT='DB for RokkuScanner';
